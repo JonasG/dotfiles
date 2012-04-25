@@ -1,4 +1,3 @@
-# Mac specific
 eval "`dircolors -b`"
 alias ls='ls --color=always'
 alias ll='ls --color=always -l'
@@ -17,9 +16,20 @@ autoload -U promptinit
 promptinit
 prompt adam1
 
+# Edit the current command-line with the editor
+autoload edit-command-line && zle -N edit-command-line
+bindkey '\ee' edit-command-line && zle -N edit
+
+export EDITOR=vim
 export HISTSIZE=65000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups
 
 unsetopt beep
+
+# Use emacs key-bindings. By default, zsh looks at the $EDITOR flag to decide which
+# to use which is not what I want.
+setopt emacs
+
+source .zshlocal
