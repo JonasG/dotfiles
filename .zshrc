@@ -9,6 +9,7 @@ alias grep='grep --color=always'
 alias egrep='egrep --color=always'
 alias fgrep='fgrep --color=always'
 alias zgrep='zgrep --color=always'
+alias diff-dirs='diff -qr'
 
 autoload -U compinit
 compinit
