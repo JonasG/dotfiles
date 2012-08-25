@@ -35,4 +35,10 @@ unsetopt beep
 # to use which is not what I want.
 setopt emacs
 
+# Settings for z
+. $HOME/bin/z/z.sh
+function precmd () {
+	_z --add "$(pwd -P)"
+}
+
 source .zshlocal
