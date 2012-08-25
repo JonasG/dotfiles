@@ -21,6 +21,8 @@ prompt adam1
 autoload edit-command-line && zle -N edit-command-line
 bindkey '\ee' edit-command-line && zle -N edit
 
+export PATH=$HOME/bin:$PATH
+
 export EDITOR=vim
 export HISTSIZE=65000
 export HISTFILE="$HOME/.history"
