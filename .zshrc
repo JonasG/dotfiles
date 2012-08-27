@@ -10,6 +10,9 @@ alias fgrep='fgrep --color=always'
 alias zgrep='zgrep --color=always'
 alias diff-dirs='diff -qr'
 
+# exts prints a list of the number of times extensions occur in dir and subdirs
+alias exts='find . -type f -name "*\.???" |rev |cut -c1-3 |rev |sort |uniq -c'
+
 autoload -U compinit
 compinit
 
