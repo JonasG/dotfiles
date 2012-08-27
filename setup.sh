@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf bin
 mkdir bin
 wget http://download.sysinternals.com/files/SysinternalsSuite.zip
 mv SysinternalsSuite.zip bin
