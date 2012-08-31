@@ -44,4 +44,7 @@ function precmd () {
 	_z --add "$(pwd -P)"
 }
 
+# Subversion
+alias svnmod="svn status | grep ^M"
+
 source .zshlocal
