@@ -1,6 +1,6 @@
 eval "`dircolors -b`"
 alias ls='ls --color=always'
-alias ll='ls --color=always -l'
+alias ll='ls --color=always -l -h'
 alias la='ls --color=always -A'
 alias less='less -R'
 alias ls='ls --color=always'
