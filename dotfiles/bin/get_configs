@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+WORKAREA=config-work-area
+
+cd $HOME
+rm -rf $WORKAREA
+mkdir $WORKAREA
+cd $WORKAREA
+
+sftp -P $HOMEPORT jonas@$HOMESERVER:/home/jonas/configs/*config.tgz
+
+pushd $HOME/projects
+rm vimbackup.tgz
+tar -czf vimbackup.tgz vimsettings
+rm -rf vimsettings
+cp $HOME/$WORKAREA/vimconfig.tgz .
+tar -xzf vimconfig.tgz
+
+rm dotfilesbackup.tgz
+tar -czf dotfilesbackup.tgz dotfiles
+rm -rf dotfiles
+cp $HOME/$WORKAREA/unixconfig.tgz .
+tar -xzf unixconfig.tgz
