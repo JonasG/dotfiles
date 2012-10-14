@@ -18,5 +18,7 @@ curl https://raw.github.com/jakobi/script-archive/master/vim/pipe.vim > pipe.vim
 popd
 popd
 
+cp -v binaries/* dotfiles/bin
+
 tar -czf unixconfig.tgz dotfiles
 cp unixconfig.tgz /home/jonas/configs
