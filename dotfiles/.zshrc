@@ -47,5 +47,6 @@ function precmd () {
 # Subversion
 alias svnmod="svn status | grep ^M"
 alias svn-revert="svnmod | cut -d ' ' -f 8 | pipe.vim | xargs svn revert"
+alias svn-commit="svnmod | cut -d ' ' -f 8 | pipe.vim | xargs svn commit"
 
 source $HOME/.zshlocal
