@@ -1,3 +1,9 @@
+# oh-my-zsh configuration
+ZSH=$HOME/bin/oh-my-zsh
+ZSH_THEME="geoffgarside"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 eval "`dircolors -b`"
 alias ls='ls --color=always'
 alias ll='ls --color=always -l -h'
@@ -15,10 +21,6 @@ alias exts='find . -type f -name "*\.???" |rev |cut -c1-3 |rev |sort |uniq -c'
 
 autoload -U compinit
 compinit
-
-autoload -U promptinit
-promptinit
-prompt adam1
 
 # Edit the current command-line with the editor
 autoload edit-command-line && zle -N edit-command-line
