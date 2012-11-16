@@ -17,10 +17,13 @@ curl https://raw.github.com/jakobi/script-archive/master/vim/pipe.vim > pipe.vim
 
 git clone git://github.com/robbyrussell/oh-my-zsh.git
 
+curl http://nongnu.org/ranger/ranger-stable.tar.gz > ranger-stable.tar.gz
+tar -xzf ranger-stable.tar.gz
+
 popd
 popd
 
-cp -v binaries/* dotfiles/bin
+cp -vR binaries/* dotfiles/bin
 
 tar -czf unixconfig.tgz dotfiles
 cp unixconfig.tgz /home/jonas/configs
