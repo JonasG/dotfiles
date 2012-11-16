@@ -19,6 +19,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git
 
 curl http://nongnu.org/ranger/ranger-stable.tar.gz > ranger-stable.tar.gz
 tar -xzf ranger-stable.tar.gz
+rm ranger-stable.tar.gz
 
 popd
 popd
