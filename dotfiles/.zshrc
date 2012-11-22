@@ -51,4 +51,16 @@ alias svnmod="svn status | grep ^M"
 alias svn-revert="svnmod | cut -d ' ' -f 8 | pipe.vim | xargs svn revert"
 alias svn-commit="svnmod | cut -d ' ' -f 8 | pipe.vim | xargs svn commit"
 
+# lftp put function
+function ftp_put()
+{
+	lftp <<- EOF
+		open $1
+		cd "$2"
+		put $3
+		bye
+	EOF
+}
+
+
 source $HOME/.zshlocal
