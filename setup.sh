@@ -10,6 +10,7 @@ unzip SysinternalsSuite.zip
 rm SysinternalsSuite.zip
 
 git clone https://github.com/rupa/z.git
+git clone https://github.com/JonasG/checklist.git
 
 curl http://betterthangrep.com/ack-standalone > ack && chmod 0755 ack
 
