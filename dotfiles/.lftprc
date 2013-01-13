@@ -1,0 +1,1 @@
+alias ed source -e ~/bin/edit-lftp-remote.sh $1
