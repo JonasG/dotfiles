@@ -11,6 +11,7 @@ mercurial
 nc
 ncdu
 p7zip
+procps
 pv
 python
 python-argparse
@@ -19,9 +20,9 @@ sqlite3
 subversion
 units
 unzip
-vim
 wget
 which
+wtf
 xxd
 zip
 zsh
