@@ -26,6 +26,8 @@ compinit
 autoload edit-command-line && zle -N edit-command-line
 bindkey '\ee' edit-command-line && zle -N edit
 
+unsetopt CORRECTALL
+
 export PATH=$HOME/bin:$PATH
 
 export EDITOR=vim
