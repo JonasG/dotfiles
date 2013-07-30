@@ -12,6 +12,9 @@ rm SysinternalsSuite.zip
 git clone https://github.com/rupa/z.git
 git clone https://github.com/JonasG/checklist.git
 
+curl https://raw.github.com/sjl/peat/master/peat > peat && chmod 0755 peat
+curl https://raw.github.com/sjl/friendly-find/master/ffind > ffind && chmod 0755 ffind
+
 curl http://betterthangrep.com/ack-standalone > ack && chmod 0755 ack
 
 curl https://raw.github.com/jakobi/script-archive/master/vim/pipe.vim > pipe.vim && chmod 0755 pipe.vim
