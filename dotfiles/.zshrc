@@ -64,5 +64,6 @@ function ftp_put()
 	EOF
 }
 
+function hex2dec() { python -c "print int('$1', 16)"; }
 
 source $HOME/.zshlocal
