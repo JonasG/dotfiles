@@ -66,4 +66,6 @@ function ftp_put()
 
 function hex2dec() { python -c "print int('$1', 16)"; }
 
+alias pomodoro="sleep 25m && echo DONE"
+
 source $HOME/.zshlocal
