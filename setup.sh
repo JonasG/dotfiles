@@ -25,6 +25,10 @@ curl http://nongnu.org/ranger/ranger-stable.tar.gz > ranger-stable.tar.gz
 tar -xzf ranger-stable.tar.gz
 rm ranger-stable.tar.gz
 
+svn --force export http://apt-cyg.googlecode.com/svn/trunk/ .
+chmod +x apt-cyg
+echo Try installing packages with apt-cyg
+
 popd
 popd
 
